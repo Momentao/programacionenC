@@ -6,4 +6,4 @@ clip: *.go
 
 opt: *.go
 	go tool 6g -m -o clip.6 *.go
-	go tool 6l -
+	go tool 6l -o clip clip.6
