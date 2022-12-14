@@ -2,4 +2,4 @@
 
 CLIP is a Command Line Interface music Player.
 
-CLIP does not use a text-base
+CLIP does not use a text-based user interface (TUI) , but offers a true command line interface (CLI) 
