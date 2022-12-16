@@ -2,4 +2,8 @@
 
 CLIP is a Command Line Interface music Player.
 
-CLIP does not use a text-based user interface (TUI) , but offers a true command line interface (CLI) 
+CLIP does not use a text-based user interface (TUI) , but offers a true command line interface (CLI) with bash completion.
+
+Usage example:
+
+clip add /home/me
