@@ -6,4 +6,6 @@ CLIP does not use a text-based user interface (TUI) , but offers a true command 
 
 Usage example:
 
-clip add /home/me
+clip add /home/me/music  # adds music to library
+
+clip play kraftw<TAB>  # TAB-com
