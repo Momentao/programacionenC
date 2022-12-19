@@ -8,4 +8,5 @@ Usage example:
 
 clip add /home/me/music  # adds music to library
 
-clip play kraftw<TAB>  # TAB-com
+clip play kraftw<TAB>  # TAB-completes to "Kraftwerk", if that's in the library, and starts playing.
+
