@@ -5,4 +5,5 @@ package main
 import ()
 
 type Backend interface {
-	Play(f
+	Play(file string) // play a file, block until done
+	Stop()            // 
