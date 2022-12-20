@@ -6,4 +6,5 @@ import ()
 
 type Backend interface {
 	Play(file string) // play a file, block until done
-	Stop()            // 
+	Stop()            // stop playing
+}
