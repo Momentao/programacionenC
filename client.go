@@ -1,3 +1,4 @@
 package main
 
-// This file implemen
+// This file implements the client main function.
+// Invoked whenever the user t
