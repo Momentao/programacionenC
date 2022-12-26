@@ -28,4 +28,7 @@ func MainClient(args []string) {
 	if err != nil {
 		fmt.Fprint(os.Stderr, cleanup(err.Error()))
 	}
-	fmt.Prin
+	fmt.Print(cleanup(resp))
+}
+
+// cleanup newlines so string can be printed to st
