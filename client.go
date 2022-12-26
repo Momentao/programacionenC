@@ -22,4 +22,7 @@ const port = ":2527"
 // Simply passes the arguments to the daemon and
 // displays the result.
 func MainClient(args []string) {
-	client := dialDa
+	client := dialDaemon()
+	var resp string
+	err := client.Call("RPC.Call", args, &resp)
+	if er
