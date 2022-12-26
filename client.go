@@ -32,4 +32,8 @@ func MainClient(args []string) {
 }
 
 // cleanup newlines so string can be printed to stdout without redundant/missing newlines
-func cleanup(str string) strin
+func cleanup(str string) string {
+	str = strings.Trim(str, "\n")
+	if str != "" {
+		return str + "\n"
+	}
