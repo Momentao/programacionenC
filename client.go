@@ -19,4 +19,7 @@ import (
 const port = ":2527"
 
 // Main loop for "client" mode (the normal mode).
-// Simply passes the arguments to the da
+// Simply passes the arguments to the daemon and
+// displays the result.
+func MainClient(args []string) {
+	client := dialDa
