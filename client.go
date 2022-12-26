@@ -18,4 +18,5 @@ import (
 // RPC port
 const port = ":2527"
 
-// Main loop for "c
+// Main loop for "client" mode (the normal mode).
+// Simply passes the arguments to the da
