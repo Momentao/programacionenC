@@ -31,4 +31,5 @@ func MainClient(args []string) {
 	fmt.Print(cleanup(resp))
 }
 
-// cleanup newlines so string can be printed to st
+// cleanup newlines so string can be printed to stdout without redundant/missing newlines
+func cleanup(str string) strin
