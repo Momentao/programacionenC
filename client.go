@@ -25,4 +25,7 @@ func MainClient(args []string) {
 	client := dialDaemon()
 	var resp string
 	err := client.Call("RPC.Call", args, &resp)
-	if er
+	if err != nil {
+		fmt.Fprint(os.Stderr, cleanup(err.Error()))
+	}
+	fmt.Prin
