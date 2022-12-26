@@ -12,4 +12,10 @@ import (
 	"os"
 	"os/exec"
 	"strings"
-	
+	"time"
+)
+
+// RPC port
+const port = ":2527"
+
+// Main loop for "c
