@@ -40,4 +40,5 @@ func cleanup(str string) string {
 	return str
 }
 
-// Connect to the clip daemon for R
+// Connect to the clip daemon for RPC communication.
+// Starts the daemon if he's not yet runn
