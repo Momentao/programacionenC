@@ -37,3 +37,7 @@ func cleanup(str string) string {
 	if str != "" {
 		return str + "\n"
 	}
+	return str
+}
+
+// Connect to the clip daemon for R
