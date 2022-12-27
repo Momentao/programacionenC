@@ -46,4 +46,6 @@ func dialDaemon() *rpc.Client {
 	// try to call the daemon
 	client, err := rpc.DialHTTP("tcp", "localhost"+port)
 
-	// if daemon does no
+	// if daemon does not seem to be running, start him.
+	const SLEEP = 10e6 // nanoseconds
+	if err != n
