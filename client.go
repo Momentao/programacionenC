@@ -53,4 +53,7 @@ func dialDaemon() *rpc.Client {
 		time.Sleep(SLEEP)
 	}
 
-	// try again to call the d
+	// try again to call the daemon,
+	// give him some time to come up.
+	trials := 0
+	for err != nil 
