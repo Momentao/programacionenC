@@ -58,4 +58,12 @@ func dialDaemon() *rpc.Client {
 	trials := 0
 	for err != nil && trials < 10 {
 		client, err = rpc.DialHTTP("tcp", "localhost"+port)
-		ti
+		time.Sleep(SLEEP)
+		trials++
+	}
+
+	Check(err)
+	return client
+}
+
+// Start the
