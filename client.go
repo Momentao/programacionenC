@@ -48,4 +48,9 @@ func dialDaemon() *rpc.Client {
 
 	// if daemon does not seem to be running, start him.
 	const SLEEP = 10e6 // nanoseconds
-	if err != n
+	if err != nil {
+		forkDaemon()
+		time.Sleep(SLEEP)
+	}
+
+	// try again to call the d
