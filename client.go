@@ -41,4 +41,7 @@ func cleanup(str string) string {
 }
 
 // Connect to the clip daemon for RPC communication.
-// Starts the daemon if he's not yet runn
+// Starts the daemon if he's not yet running.
+func dialDaemon() *rpc.Client {
+	// try to call the daemon
+	client, err 
