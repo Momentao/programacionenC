@@ -44,4 +44,6 @@ func cleanup(str string) string {
 // Starts the daemon if he's not yet running.
 func dialDaemon() *rpc.Client {
 	// try to call the daemon
-	client, err 
+	client, err := rpc.DialHTTP("tcp", "localhost"+port)
+
+	// if daemon does no
