@@ -68,4 +68,7 @@ func dialDaemon() *rpc.Client {
 
 // Start the clip daemon.
 func forkDaemon() {
-	executable, err := os.Readlink("/pr
+	executable, err := os.Readlink("/proc/self/exe")
+	Check(err)
+	cmd := exec.Command(executable, "-d")
+	err = cmd.Star
