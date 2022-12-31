@@ -33,3 +33,64 @@ func NewClip(file string) *Clip {
 
 // Rudimentary way to set clip tags based on file name:
 //	artist/album/01_title.ogg
+// TODO: read I3D tags.
+func (clip *Clip) initTags() {
+	// if file starts with number,
+	// use it as TRACK tag.
+	file := clip.file
+	base := path.Base(file)
+	i := 0
+	for _, chr := range base {
+		if !unicode.IsDigit(chr) {
+			break
+		}
+		i++
+	}
+	clip.tags[TAG_TRACK] = base[:i]
+
+	// TITLE tag is filename without extension
+	// or leading track number.
+	ext := path.Ext(base)
+	title := base[i : len(base)-len(ext)]
+	clip.tags[TAG_TITLE] = strings.Trim(title, " ")
+
+	// ALBUM tag is clip's parent directory
+	parent1, _ := path.Split(file)
+	clip.tags[TAG_ALBUM] = path.Base(parent1)
+
+	// ARTIST tag is albums' parent directory
+	parent2, _ := path.Split(parent1[:len(parent1)-1])
+	clip.tags[TAG_ARTIST] = path.Base(parent2)
+}
+
+func (clip *Clip) File() string {
+	return clip.file
+}
+
+func (clip *Clip) Track() string {
+	return clip.tags[TAG_TRACK]
+}
+
+func (clip *Clip) Title() string {
+	return clip.tags[TAG_TITLE]
+}
+
+func (clip *Clip) Album() string {
+	return clip.tags[TAG_ALBUM]
+}
+
+func (clip *Clip) Artist() string {
+	return clip.tags[TAG_ARTIST]
+}
+
+func (clip *Clip) Genre() string {
+	return clip.tags[TAG_GENRE]
+}
+
+func (clip *Clip) String() string {
+	str := clip.file + "\n"
+	for i, tag := range clip.tags {
+		str += "\t" + tagStr[i] + ":" + tag + "\n"
+	}
+	return str
+}
