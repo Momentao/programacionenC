@@ -71,4 +71,6 @@ func forkDaemon() {
 	executable, err := os.Readlink("/proc/self/exe")
 	Check(err)
 	cmd := exec.Command(executable, "-d")
-	err = cmd.Star
+	err = cmd.Start()
+	Check(err)
+}
