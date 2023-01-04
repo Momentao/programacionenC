@@ -1,3 +1,6 @@
 package main
 
-// Th
+// This file implements the "import" command
+
+func init() {
+	help["import
