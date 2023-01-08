@@ -13,4 +13,5 @@ import (
 //	children []*Item
 //}
 //
-//func NewFile(f
+//func NewFile(file string) *Item {
+//	return &Item{tag: Fuzzy(path.Base(file)), file:
