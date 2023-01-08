@@ -8,4 +8,9 @@ import (
 //// or a collection of other Items.
 //// Collections represent typically genres, artists, albums, etc.
 //type Item struct {
-//	t
+//	tag      string
+//	file     string
+//	children []*Item
+//}
+//
+//func NewFile(f
