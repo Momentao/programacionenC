@@ -14,4 +14,8 @@ import (
 //}
 //
 //func NewFile(file string) *Item {
-//	return &Item{tag: Fuzzy(path.Base(file)), file:
+//	return &Item{tag: Fuzzy(path.Base(file)), file: file}
+//}
+//
+//func (item *Item) String() string {
+//	retur
