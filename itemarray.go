@@ -7,4 +7,8 @@ import (
 //type ItemArray []*Item
 //
 //func (arr *ItemArray) Append(item ...*Item) {
-//	*ar
+//	*arr = append(*arr, item...)
+//}
+//
+//func (arr ItemArray) Len() int {
+//	ret
