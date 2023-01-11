@@ -11,4 +11,8 @@ import (
 //}
 //
 //func (arr ItemArray) Len() int {
-//	ret
+//	return len(arr)
+//}
+//
+//func (arr ItemArray) Less(i, j int) bool {
+//	return
