@@ -4,4 +4,7 @@ import (
 //"bytes"
 )
 
-//type I
+//type ItemArray []*Item
+//
+//func (arr *ItemArray) Append(item ...*Item) {
+//	*ar
