@@ -15,4 +15,8 @@ import (
 //}
 //
 //func (arr ItemArray) Less(i, j int) bool {
-//	return
+//	return Less(arr[i].tag, arr[j].tag)
+//}
+//
+//func Less(i, j string) bool {
+/
