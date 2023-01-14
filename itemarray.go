@@ -23,4 +23,5 @@ import (
 //}
 //
 //func (arr ItemArray) Swap(i, j int) {
-//	arr[i], arr[j] = arr[j], arr
+//	arr[i], arr[j] = arr[j], arr[i]
+//}
