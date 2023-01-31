@@ -5,4 +5,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"r
+	"runtime"
+)
+
+// Command-line flags for special modes
+// not
