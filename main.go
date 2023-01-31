@@ -9,4 +9,6 @@ import (
 )
 
 // Command-line flags for special modes
-// not
+// not normally used by the user.
+var (
+	//flag_complete *bool = flag.Bool
