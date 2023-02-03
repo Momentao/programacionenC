@@ -20,4 +20,5 @@ func main() {
 	flag.Parse()
 
 	if *flag_version {
-	
+		fmt.Println(`CLIP 0.0.80 "Hupsje"`)
+		fmt.Println("Go ", runtime.Version()
