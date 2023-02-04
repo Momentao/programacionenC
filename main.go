@@ -21,4 +21,9 @@ func main() {
 
 	if *flag_version {
 		fmt.Println(`CLIP 0.0.80 "Hupsje"`)
-		fmt.Println("Go ", runtime.Version()
+		fmt.Println("Go ", runtime.Version())
+		return
+	}
+
+	//	if *flag_complete {
+	//		clip.AutoComplete(flag.A
