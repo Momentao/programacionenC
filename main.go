@@ -26,4 +26,9 @@ func main() {
 	}
 
 	//	if *flag_complete {
-	//		clip.AutoComplete(flag.A
+	//		clip.AutoComplete(flag.Args())
+	//		return
+	//	}
+
+	if *flag_daemon {
+		NewPlayer().Daemon()
