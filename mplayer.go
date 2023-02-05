@@ -1,3 +1,9 @@
 package main
 
-// This file uses mplaye
+// This file uses mplayer as a playback back-end.
+
+import (
+	"log"
+	"os/exec"
+	//"fmt"
+)
