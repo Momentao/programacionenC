@@ -32,3 +32,7 @@ func main() {
 
 	if *flag_daemon {
 		NewPlayer().Daemon()
+	}
+
+	MainClient(flag.Args())
+}
