@@ -7,3 +7,9 @@ import (
 	"os/exec"
 	//"fmt"
 )
+
+type MPlayer struct {
+	cmd *exec.Cmd
+}
+
+func (m *MPlayer) Play(file string) {
