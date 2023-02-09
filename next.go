@@ -4,4 +4,5 @@ package main
 
 //func (player *Player) Next(args []string) (resp, err string) {
 //	if len(args) > 0 {
-//		er
+//		err = "next does not take arguments yet"
+//		// TODO:
