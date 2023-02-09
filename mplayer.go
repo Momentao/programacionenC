@@ -21,3 +21,9 @@ func (m *MPlayer) Play(file string) {
 	if _, ok := err.(*exec.ExitError); !ok {
 		Check(err)
 	}
+
+	log.Println("mplayer output", string(out))
+}
+
+func (m *MPlayer) Stop() {
+	if 
