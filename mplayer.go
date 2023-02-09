@@ -29,4 +29,6 @@ func (m *MPlayer) Stop() {
 	if m.cmd != nil {
 		//err := 
 		m.cmd.Process.Kill()
-		//Check(er
+		//Check(err) // !! TODO: may already be finished in the meanwhile
+	}
+}
