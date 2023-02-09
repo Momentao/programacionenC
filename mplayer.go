@@ -26,4 +26,7 @@ func (m *MPlayer) Play(file string) {
 }
 
 func (m *MPlayer) Stop() {
-	if 
+	if m.cmd != nil {
+		//err := 
+		m.cmd.Process.Kill()
+		//Check(er
