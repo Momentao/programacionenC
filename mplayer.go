@@ -13,4 +13,7 @@ type MPlayer struct {
 }
 
 func (m *MPlayer) Play(file string) {
-	m.cmd = exec.Command("mplayer", "-really-quiet", 
+	m.cmd = exec.Command("mplayer", "-really-quiet", file)
+	out, err := m.cmd.CombinedOutput()
+
+	// If the command wa
