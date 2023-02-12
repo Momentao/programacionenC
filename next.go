@@ -14,4 +14,5 @@ package main
 //		return
 //	}
 //
-//	
+//	if player.current+1 < len(player.playlist) {
+//		player.backend.Stop() // 
