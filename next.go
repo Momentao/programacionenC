@@ -9,4 +9,9 @@ package main
 //		return
 //	}
 //
-//	if len
+//	if len(player.playlist) == 0 {
+//		err = "playlist empty"
+//		return
+//	}
+//
+//	
