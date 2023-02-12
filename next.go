@@ -5,4 +5,8 @@ package main
 //func (player *Player) Next(args []string) (resp, err string) {
 //	if len(args) > 0 {
 //		err = "next does not take arguments yet"
-//		// TODO:
+//		// TODO: next album, next artist, ...
+//		return
+//	}
+//
+//	if len
