@@ -15,4 +15,5 @@ package main
 //	}
 //
 //	if player.current+1 < len(player.playlist) {
-//		player.backend.Stop() // 
+//		player.backend.Stop() // TODO: not thread safe!!
+//		// will advance to next automatically // 
