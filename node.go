@@ -4,4 +4,9 @@ package main
 
 import (
 	"fmt"
-	
+	"io"
+)
+
+// Node in the Library's file tree.
+type Node struct {
+	payload  inte
