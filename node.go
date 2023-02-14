@@ -14,4 +14,6 @@ type Node struct {
 	children []*Node
 }
 
-// Walks through the tree and a
+// Walks through the tree and applies function f to each Node.
+func (this *Node) Walk(f func(*Node)) {
+	f
