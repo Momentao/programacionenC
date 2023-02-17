@@ -16,4 +16,10 @@ type Node struct {
 
 // Walks through the tree and applies function f to each Node.
 func (this *Node) Walk(f func(*Node)) {
-	f
+	f(this)
+	for _, c := range this.children {
+		c.Walk(f)
+	}
+}
+
+// Construct n
