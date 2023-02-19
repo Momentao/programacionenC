@@ -22,4 +22,6 @@ func (this *Node) Walk(f func(*Node)) {
 	}
 }
 
-// Construct n
+// Construct new node with given parent
+// and link the parent-child pointers.
+func (parent *Node) NewChi
