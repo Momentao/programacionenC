@@ -25,4 +25,6 @@ func (this *Node) Walk(f func(*Node)) {
 // Construct new node with given parent
 // and link the parent-child pointers.
 func (parent *Node) NewChild(file string) (child *Node) {
-	child = &Node{file, pare
+	child = &Node{file, parent, nil}
+	parent.children = append(parent.children, child)
+	re
