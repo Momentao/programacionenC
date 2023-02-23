@@ -27,4 +27,8 @@ func (this *Node) Walk(f func(*Node)) {
 func (parent *Node) NewChild(file string) (child *Node) {
 	child = &Node{file, parent, nil}
 	parent.children = append(parent.children, child)
-	re
+	return
+}
+
+// Returns full path represented by this node.
+func (n *Node) Strin
