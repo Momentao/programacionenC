@@ -40,4 +40,9 @@ func (n *Node) String() string {
 }
 
 // Write full path to out.
-func (this *Node) WriteTo(out io.Writer) (n int, err er
+func (this *Node) WriteTo(out io.Writer) (n int, err error) {
+	n, err = fmt.Fprintln(out, this)
+	return
+}
+
+// Get a ch
