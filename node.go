@@ -39,4 +39,5 @@ func (n *Node) String() string {
 	return str
 }
 
-// Wri
+// Write full path to out.
+func (this *Node) WriteTo(out io.Writer) (n int, err er
