@@ -31,4 +31,6 @@ func (parent *Node) NewChild(file string) (child *Node) {
 }
 
 // Returns full path represented by this node.
-func (n *Node) Strin
+func (n *Node) String() string {
+	str := fmt.Sprint(n.payload)
+	for p := n.parent; p !=
