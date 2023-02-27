@@ -45,4 +45,5 @@ func (this *Node) WriteTo(out io.Writer) (n int, err error) {
 	return
 }
 
-// Get a ch
+// Get a child by its file string.
+func (n *Node) Child(file string) *No
