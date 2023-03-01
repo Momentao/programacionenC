@@ -49,4 +49,8 @@ func (this *Node) WriteTo(out io.Writer) (n int, err error) {
 func (n *Node) Child(file string) *Node {
 	for _, c := range n.children {
 		if c.payload == file {
-			return
+			return c
+		}
+	}
+	return nil
+}
