@@ -46,4 +46,7 @@ func (this *Node) WriteTo(out io.Writer) (n int, err error) {
 }
 
 // Get a child by its file string.
-func (n *Node) Child(file string) *No
+func (n *Node) Child(file string) *Node {
+	for _, c := range n.children {
+		if c.payload == file {
+			return
