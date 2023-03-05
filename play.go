@@ -9,3 +9,5 @@ func (player *Player) Play() (resp, err string) {
 	//		resp = "already playing"
 	//	}
 	//
+	//	if len(player.playlist) == 0 {
+	//		err = "playlist em
