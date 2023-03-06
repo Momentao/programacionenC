@@ -20,4 +20,5 @@ func (player *Player) Play() (resp, err string) {
 	//	player.playing = true
 	//
 	//	go func() {
+	//		player.backend.Play(player.playlist[player.current].file)
 	//		player.
