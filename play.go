@@ -10,4 +10,9 @@ func (player *Player) Play() (resp, err string) {
 	//	}
 	//
 	//	if len(player.playlist) == 0 {
-	//		err = "playlist em
+	//		err = "playlist empty"
+	//		return
+	//	}
+	//
+	//	if player.current == -1 {
+	//		player.current =
