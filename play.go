@@ -21,4 +21,7 @@ func (player *Player) Play() (resp, err string) {
 	//
 	//	go func() {
 	//		player.backend.Play(player.playlist[player.current].file)
-	//		player.
+	//		player.playedChan <- 1
+	//	}()
+	//	return
+}
