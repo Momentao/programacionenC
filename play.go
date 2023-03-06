@@ -15,4 +15,9 @@ func (player *Player) Play() (resp, err string) {
 	//	}
 	//
 	//	if player.current == -1 {
-	//		player.current =
+	//		player.current = 0
+	//	}
+	//	player.playing = true
+	//
+	//	go func() {
+	//		player.
