@@ -1,3 +1,4 @@
 package main
 
-// This file im
+// This file implements the player state.
+// The player communicates over RPC (Remote Proced
