@@ -5,4 +5,10 @@ package main
 // with the client. The client forks a player daemon (clip -d)
 // if none is yet running and sends RPC calls to it.
 
-impo
+import (
+//"sync"
+)
+
+type Player struct {
+	Lib // the player's library
+	//pla
