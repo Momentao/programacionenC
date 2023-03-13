@@ -14,3 +14,9 @@ type Player struct {
 	//playlist ItemArray
 	//	current  int // current track
 	//	playing  bool
+	//	backend  Backend
+	port string // default RPC port
+	//	sync.Mutex
+}
+
+// Constructor
