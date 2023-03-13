@@ -11,4 +11,6 @@ import (
 
 type Player struct {
 	Lib // the player's library
-	//pla
+	//playlist ItemArray
+	//	current  int // current track
+	//	playing  bool
