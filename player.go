@@ -20,3 +20,7 @@ type Player struct {
 }
 
 // Constructor
+func NewPlayer() *Player {
+	p := new(Player)
+	p.init()
+	retur
