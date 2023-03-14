@@ -23,4 +23,7 @@ type Player struct {
 func NewPlayer() *Player {
 	p := new(Player)
 	p.init()
-	retur
+	return p
+}
+
+// Wraps the player in an API to expose methods availabl
