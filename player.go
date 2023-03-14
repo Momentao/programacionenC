@@ -26,4 +26,9 @@ func NewPlayer() *Player {
 	return p
 }
 
-// Wraps the player in an API to expose methods availabl
+// Wraps the player in an API to expose methods available to the user.
+func (p *Player) API() API {
+	return API{p}
+}
+
+// Wraps the pl
