@@ -31,4 +31,5 @@ func (p *Player) API() API {
 	return API{p}
 }
 
-// Wraps the pl
+// Wraps the player in an RPC to expose methods available to the RPC server.
+func
