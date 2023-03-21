@@ -32,4 +32,8 @@ func (p *Player) API() API {
 }
 
 // Wraps the player in an RPC to expose methods available to the RPC server.
-func
+func (p *Player) RPC() RPC {
+	return RPC{p}
+}
+
+func (p *Player) init() 
