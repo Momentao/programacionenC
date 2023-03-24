@@ -39,4 +39,8 @@ func (p *Player) RPC() RPC {
 func (p *Player) init() {
 	Debug("player initialized")
 	(&p.Lib).init()
-	//p.playlist = ItemArr
+	//p.playlist = ItemArray([]*Item{})
+	//p.playing = false
+	//p.current = -1
+	//p.port = ":25274"
+	//p
