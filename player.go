@@ -43,4 +43,8 @@ func (p *Player) init() {
 	//p.playing = false
 	//p.current = -1
 	//p.port = ":25274"
-	//p
+	//p.backend = new(MPlayer)
+}
+
+// Main loop for daemon mode
+func (p *Playe
