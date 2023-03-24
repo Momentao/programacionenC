@@ -36,4 +36,7 @@ func (p *Player) RPC() RPC {
 	return RPC{p}
 }
 
-func (p *Player) init() 
+func (p *Player) init() {
+	Debug("player initialized")
+	(&p.Lib).init()
+	//p.playlist = ItemArr
