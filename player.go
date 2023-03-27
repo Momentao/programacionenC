@@ -47,4 +47,7 @@ func (p *Player) init() {
 }
 
 // Main loop for daemon mode
-func (p *Playe
+func (p *Player) Daemon() {
+	// TODO: heartbeat here
+	p.serveRPC()
+}
