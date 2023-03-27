@@ -86,3 +86,13 @@ func (rpc RPC) call(cmd string, args []string) (resp string, err error) {
 		}
 		callArgs = []reflect.Value{reflect.ValueOf(args)}
 	}
+
+	// call the method
+	r := m.Call(callArgs)
+	resp = r[0].Interface().(string)    // by convention, response is 1st return value
+	errStr := r[1].Interface().(string) // by convention, error is 2nd return value
+	if errStr != "" {
+		err = errors.New(errStr)
+	}
+	return
+}
