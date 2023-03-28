@@ -6,4 +6,11 @@ package main
 // A tag may represent, e.g., an artist, album, clip...
 // Some tags, like albums, have child Tags while
 // others, like clips, are leaf nodes.
-// The leaf nodes point to 
+// The leaf nodes point to a file to be played.
+
+import (
+	"strings"
+)
+
+type Tag struct {
+	fuzz
