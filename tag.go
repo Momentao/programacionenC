@@ -13,4 +13,6 @@ import (
 )
 
 type Tag struct {
-	fuzz
+	fuzzy    string // fuzzyfied tag
+	children []*Tag // children, if any
+	file  
