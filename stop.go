@@ -9,3 +9,9 @@ package main
 //		resp = "Already stopped."
 //		return
 //	}
+//
+//	player.playing = false
+//	player.backend.Stop()
+//
+//	return
+//}
