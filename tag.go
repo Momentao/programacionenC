@@ -15,4 +15,8 @@ import (
 type Tag struct {
 	fuzzy    string // fuzzyfied tag
 	children []*Tag // children, if any
-	file  
+	file     string // music file, in case of leaf node
+}
+
+func NewTag(tag string) *Tag {
+	r
