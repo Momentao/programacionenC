@@ -19,4 +19,7 @@ type Tag struct {
 }
 
 func NewTag(tag string) *Tag {
-	r
+	return &Tag{Fuzzy(tag), []*Tag{}, ""}
+}
+
+// Get a child by fuzzy tag 
