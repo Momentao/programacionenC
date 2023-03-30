@@ -22,4 +22,6 @@ func NewTag(tag string) *Tag {
 	return &Tag{Fuzzy(tag), []*Tag{}, ""}
 }
 
-// Get a child by fuzzy tag 
+// Get a child by fuzzy tag matching.
+// If the child does not exist yet, it is added.
+func (this *Tag) Ch
