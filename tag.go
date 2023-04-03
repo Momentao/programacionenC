@@ -26,4 +26,7 @@ func NewTag(tag string) *Tag {
 // If the child does not exist yet, it is added.
 func (this *Tag) Child(tag string) (child *Tag, ok bool) {
 	fuzzyTag := Fuzzy(tag)
-	for _, c := rang
+	for _, c := range this.children {
+		if c.fuzzy == fuzzyTag {
+			child = c
+			ok = true
