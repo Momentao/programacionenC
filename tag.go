@@ -24,4 +24,6 @@ func NewTag(tag string) *Tag {
 
 // Get a child by fuzzy tag matching.
 // If the child does not exist yet, it is added.
-func (this *Tag) Ch
+func (this *Tag) Child(tag string) (child *Tag, ok bool) {
+	fuzzyTag := Fuzzy(tag)
+	for _, c := rang
