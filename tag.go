@@ -38,4 +38,8 @@ func (this *Tag) Child(tag string) (child *Tag, ok bool) {
 	return
 }
 
-func (this *Tag) String() str
+func (this *Tag) String() string {
+	return this.fuzzy
+}
+
+func (this *Tag) Print(indent int) string {
