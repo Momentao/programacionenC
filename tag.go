@@ -50,4 +50,9 @@ func (this *Tag) Print(indent int) string {
 	return str
 }
 
-func spaces(howma
+func spaces(howmany int) string {
+	return "       "[:howmany]
+}
+
+// Fuzzyfy string
+func Fu
