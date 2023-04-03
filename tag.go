@@ -55,4 +55,7 @@ func spaces(howmany int) string {
 }
 
 // Fuzzyfy string
-func Fu
+func Fuzzy(str string) string {
+	str = strings.ToLower(str)
+	return str
+}
