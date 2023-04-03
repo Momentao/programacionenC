@@ -30,3 +30,8 @@ func (this *Tag) Child(tag string) (child *Tag, ok bool) {
 		if c.fuzzy == fuzzyTag {
 			child = c
 			ok = true
+			return
+		}
+	}
+	child = NewTag(tag)
+	this.children = append(this.childr
