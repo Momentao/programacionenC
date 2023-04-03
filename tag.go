@@ -43,3 +43,5 @@ func (this *Tag) String() string {
 }
 
 func (this *Tag) Print(indent int) string {
+	str := spaces(indent) + this.fuzzy + ":" + this.file + "\n"
+	for _, c := range thi
