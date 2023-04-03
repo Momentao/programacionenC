@@ -34,4 +34,8 @@ func (this *Tag) Child(tag string) (child *Tag, ok bool) {
 		}
 	}
 	child = NewTag(tag)
-	this.children = append(this.childr
+	this.children = append(this.children, child)
+	return
+}
+
+func (this *Tag) String() str
